@@ -1,0 +1,46 @@
+.layout {
+  background-color: var(--grey-95);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: var(--white-100);
+  width: 400px;
+  height: 460px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  padding: 40px;
+}
+
+.header {
+  font-size: 1.5em;
+  color: var(--black-100);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.singUpLink {
+  color: var(--grey-75);
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.forgotPasswordLayout {
+  display: block;
+  margin-top: 30px;
+  font-size: 0.8em;
+  letter-spacing: 0.8px;
+}
+
+.rememberAgreement {
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
+.buttonLayout {
+  display: flex;
+  margin-top: 20px;
+}
