@@ -19,6 +19,7 @@ html {
 body,
 #root {
   height: 100%;
+  background-color: var(--grey-95);
 }
 
 body {
@@ -26,5 +27,5 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--accent);
 }

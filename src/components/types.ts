@@ -1,8 +1,14 @@
+import React from "react";
+
 export type IInputUserData = {
-  label: "email" | "password" | "needToRemember";
+  id: string;
+  label: string;
+  name?: string;
   placeholder?: string;
-  type?: "text" | "password" | "email";
+  type?: "text" | "password" | "email" | "tel";
   value?: string;
+  errors?: object;
   error?: string;
+  validateConfig?: object;
   onChange?: (e: React.ChangeEvent) => void;
 };

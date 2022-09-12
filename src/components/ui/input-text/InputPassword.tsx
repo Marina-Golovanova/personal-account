@@ -45,12 +45,10 @@ export const InputPassword = React.forwardRef<HTMLElement, IInputUserData>(
 
     return (
       <OutlinedInput
-        id={props.label}
-        name={props.label}
+        id={props.id}
+        name={props.id}
         ref={ref as React.ForwardedRef<HTMLInputElement>}
         type={passwordState.showPassword ? "text" : "password"}
-        value={passwordState.value}
-        error={!!props.error}
         onChange={handleChange}
         endAdornment={
           <InputAdornment position="end">

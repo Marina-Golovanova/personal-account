@@ -1,0 +1,41 @@
+.layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: var(--white-100);
+  width: 400px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  padding: 40px;
+}
+
+.header {
+  font-size: 1.5em;
+  color: var(--black-100);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.buttonLayout {
+  margin-top: 40px;
+}
+
+.inputLayout {
+  margin-top: 30px;
+}
+
+.error {
+  position: absolute;
+  top: 97%;
+  line-height: 1em;
+}
+
+.loginLink {
+  color: var(--grey-75);
+  letter-spacing: 1px;
+  margin-top: 5px;
+}

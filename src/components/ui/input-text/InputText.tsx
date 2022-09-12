@@ -20,14 +20,13 @@ export const InputText = React.forwardRef<HTMLElement, IInputProps>(
           <InputLabel htmlFor={props.label}>{props.label}</InputLabel>
           {props.type !== "password" && (
             <OutlinedInput
-              id={props.label}
-              name={props.label}
-              ref={ref as React.ForwardedRef<HTMLInputElement>}
+              id={props.id}
+              name={props.id}
+              inputRef={ref as React.ForwardedRef<HTMLInputElement>}
               placeholder={props.placeholder}
               label={props.label}
               type={props.type}
               onChange={props.onChange}
-              error={!!props.error}
             />
           )}
           {props.type === "password" && (
@@ -46,7 +45,6 @@ export const InputText = React.forwardRef<HTMLElement, IInputProps>(
             </FormHelperText>
           )}
         </FormControl>
-        {/* <div className={styles.label__error}>{props.error}</div> */}
       </div>
     );
   }

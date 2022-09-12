@@ -1,5 +1,4 @@
 .layout {
-  background-color: var(--grey-95);
   width: 100%;
   height: 100%;
   display: flex;
@@ -10,7 +9,6 @@
 .form {
   background-color: var(--white-100);
   width: 400px;
-  height: 460px;
   box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
   padding: 40px;
 }
@@ -28,6 +26,10 @@
   margin-top: 5px;
 }
 
+.inputLayout {
+  margin-top: 30px;
+}
+
 .forgotPasswordLayout {
   display: block;
   margin-top: 30px;
@@ -41,6 +43,5 @@
 }
 
 .buttonLayout {
-  display: flex;
   margin-top: 20px;
 }
