@@ -2,19 +2,11 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { NavLink } from "react-router-dom";
 import { Button } from "@mui/material";
-import { IInputUserData } from "../../types";
+import { IInputUserData, IUserSignUpData } from "../../types";
 import { InputText } from "../../ui/input-text";
 import { roots } from "../../constants";
 
 import styles from "./sign-up-page.module.scss";
-
-export type IUserSignUpData = {
-  firstName: string;
-  lastName: string;
-  email: string;
-  password: string;
-  number: string;
-};
 
 const signUpFields: IInputUserData[] = [
   {
@@ -122,7 +114,7 @@ export const SignUpPage = React.memo(function SignUpPage() {
         </div>
 
         {signUpFields.map((it) => (
-          <div className={styles.inputLayout}>
+          <div className={styles.inputLayout} key={it.id}>
             <InputText
               {...register(it.id as keyof IUserSignUpData, it.validateConfig)}
               {...it}

@@ -12,3 +12,14 @@ export type IInputUserData = {
   validateConfig?: object;
   onChange?: (e: React.ChangeEvent) => void;
 };
+
+export type IUser = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  number: string;
+};
+
+export type IUserBackData = IUser & { id: number };
+
+export type IUserSignUpData = IUser & { password: string };

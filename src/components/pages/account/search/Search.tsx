@@ -8,7 +8,6 @@ export const Search = React.memo(function Search() {
   const inputRef = React.useRef<HTMLInputElement>(null);
 
   const handleSearch = React.useCallback(() => {
-    console.log(inputRef.current);
     if (inputRef.current?.value) {
       console.log(inputRef.current.value);
     }

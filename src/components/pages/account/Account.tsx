@@ -1,10 +1,12 @@
 import React from "react";
 import { Search } from "./search";
+import { IUserBackData } from "../../types";
+import { UserTable } from "../../ui/user-table";
 
 import styles from "./account.module.scss";
 
 type IAccountProps = {
-  listFriend: [];
+  listFriend: IUserBackData[];
 };
 
 export const Account = React.memo(function Account(props: IAccountProps) {
@@ -16,6 +18,12 @@ export const Account = React.memo(function Account(props: IAccountProps) {
       <div className={styles.searchLayout}>
         <Search />
       </div>
+
+      {props.listFriend.length && (
+        <div className={styles.userListLayout}>
+          <UserTable userList={props.listFriend} />
+        </div>
+      )}
     </div>
   );
 });
